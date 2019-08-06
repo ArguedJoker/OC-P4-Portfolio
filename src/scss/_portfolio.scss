@@ -1,0 +1,193 @@
+.portfolio {
+    .logo {
+        align-items: center;
+        border: 5px solid $color3;
+        color: $color3;
+        display: flex;
+        font-size:2rem;
+        height: 100px;
+        line-height: 0;
+        padding: 32.5px;
+        text-transform: uppercase; 
+        width: 200px;
+    }
+
+    .info {
+        bottom: 0;
+        left: 0;
+        padding: 54px;
+        position: absolute;
+        top: 0;
+        width: 20%;
+    }
+    .info-box {
+        width: 80%;
+        bottom: 60px;
+        position: absolute;
+
+        h4 {
+            font-size: 1rem;
+            color: #fefefe;
+            margin: 0.9rem 0;
+        }
+
+        p {
+            font-size: 0.8rem;
+            font-weight: 300;
+            color: #fefefe;
+            margin: 0.2rem 1.6rem;
+        }
+    }
+
+    .icon-section {
+        a {
+            color: $color4;
+            text-decoration: none;
+            font-size: 2rem;
+            padding: 0 10px;
+
+            &:hover {
+                color: $hoverColor;
+            }
+
+            &:first-child {
+                padding: 0 10px 0 0;
+            }
+        }
+    }
+
+    .content-area {
+        background: white;
+        margin-bottom: 56px;
+        margin-left: 20%; 
+        // padding: 0 0 0 25%;
+        width: 80%;
+        height: 100%;
+    }
+
+    .projects {
+
+        margin-bottom: 56px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 56px;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+        .title {
+            margin-bottom: 30px;
+        }
+
+
+        .project-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+
+            .project-box {
+                position: relative;
+                padding: 30px;
+                transition: all 0.5s ease-in-out;
+                cursor: pointer;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                height: 400px;
+                
+
+                &:hover {
+                    box-shadow: 0px 0px 74px 6px rgba(0, 0, 0, 0.2);
+                    background-color: rgba(128, 0, 0, 0.3);
+                    -moz-box-shadow: 0px 0px 74px 6px rgba(0, 0, 0, 0.2);
+                    -webkit-boxshadow: 0px 0px 74px 6px rgba(0, 0, 0, 0.2);
+                    border-radius: 50%;  
+                }
+
+                .grey-bg {
+                    background-color: rgba(128, 0, 0, 0.8);
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    opacity: 0;
+
+                    transition: all .3s ease-in-out;
+                    
+                    &:hover {
+                        opacity: 0.5;
+                        color: $color3;
+
+                        .project-info {
+                            .project-details{
+                                transform: translate3d(100px, 0, 0);
+                                opacity: 1;
+                            }
+
+                            .project-title {
+                                transform: translate3d(115px, 0, 0);
+                                opacity: 1;
+                            }
+                            
+                        }
+                    }
+
+                    .project-info {
+                        position: absolute;
+                        bottom: 0;
+                        padding: 56px;
+                        width: 100%;
+
+                        .project-details {
+                            position: relative;
+                            font-size: 1rem;
+                            text-transform: capitalize;
+                            margin: 0 0 1rem 0;
+                            transform: translate3d(-200px, 0, 0);
+                            transition: transform 0.3s ease-in-out;
+                            opacity: 0;
+                            padding: 25px;
+                        }
+
+                        .project-title {
+                            font-size: 1.5rem;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            margin: 0;
+                            padding: 0;
+                            transform: translate3d(-400px, 0, 0);
+                            transition: transform 0.4s ease-in-out 0.1s;
+                            opacity: 0;
+                        }
+
+                    }
+                }
+
+                h5 {
+                    font-weight: 500;
+                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                    margin-bottom: 1.4rem;
+                }
+
+                p {
+                    font-weight: 300;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    margin-bottom: 0.5rem;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+

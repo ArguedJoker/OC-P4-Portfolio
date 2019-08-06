@@ -1,0 +1,206 @@
+.home {
+
+    .logo {
+        background: url("../img/logo.jpg") no-repeat center center;
+        background-size: cover;
+        border: 5px solid $color2;
+        border-radius: 5%;
+        display: flex;
+        height: 200px;
+        opacity: 0.9;
+        width: 350px;
+    }
+
+    .info {
+        bottom: 0;
+        left: 0;
+        padding: 54px;
+        position: absolute;
+        top: 0;
+        width: 35%;
+
+        .info-box {
+            bottom: 60px;
+            position: absolute;
+
+            h4 {
+                font-size: 1.2rem;
+                color: #fefefe;
+                margin: 0.9rem 0;
+            }
+
+            p {
+                font-size: 1.1rem;
+                font-weight: 300;
+                color:#fefefe;
+                margin: 0.2rem 1.6rem;
+            }
+        }
+
+        .icon-section {
+            a {
+                color: $color4;
+                text-decoration: none;
+                font-size: 2rem;
+                padding: 0 10px;
+
+                &:hover {
+                    color: $hoverColor;
+                }
+                
+                &:first-child {
+                    padding: 0 10px 0 0;
+                }
+            }
+        }
+    }
+
+    .content-area {
+        background: white;
+        margin-left: 35%; 
+        // padding: 0 0 0 25%;
+        width: 65%;
+        height: 100%;
+
+        .img-container {
+            display: inline-block;
+            height: 100%;
+            position: relative;
+            width: 30%;
+
+
+            .user-img {
+                background: url("../img/model.jpg") no-repeat center right;
+                background-size: cover;
+                box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.5);
+                border-radius: 2.5%;
+                height: 700px;
+                left: -125px;
+                margin-top: 50px;
+                position: absolute;
+                top: 56px;
+                width: 400px;
+                -moz-background-size: cover;
+                -moz-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.5);
+                -o-background-size: cover;
+                -webkit-background-size: cover;
+                -webkit-boxshadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.5);
+                
+
+                
+            }
+        }
+
+        
+        .profile-section {
+            display: inline-block;
+            max-width: 500px;
+            padding: 25% 0 0 0;
+            vertical-align: top;
+            
+            .profile { 
+
+                h1{
+                    font-size: 2.3rem;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    margin: 0 0 1.5rem;
+
+                    span {
+                        color: $color1;
+                    }
+                }
+
+                h5 {
+                    font-size: 1.3rem;
+                    margin: 0 0 1.5rem;
+                }
+
+                p {
+                    color: $color2;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    margin: 0 0 2rem;
+
+                    span {
+                        color: $color1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES
+
+// phone
+@media (min-width: 767px) and (max-width: 991px) {
+    .home {
+        .menu-icon {
+            top: 0;
+            color: white;
+
+            .fa {
+                color: white;
+                right: 30px;
+            }
+        }
+
+        .info {
+            //display: none;
+            padding: 10px 20px;
+            //left: 0;
+            //bottom:0;
+            //top: 0;
+            position: static;
+            //width: 0;
+
+            .logo {
+                height: 50px;
+                width: 70px;
+                font-size: 1rem;
+            }
+
+            .info-box {
+                display: none;
+            }
+        }
+        
+        .content-area {
+            margin-left: 0;
+            width: 100%;
+            overflow: auto;
+
+            .profile-section {
+                width: 70%;
+                float: left;
+                padding: 20% 20px 0;
+                max-width: 800px;
+
+                .primary-btn, .secondary-btn, .tertiary-btn {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .img-container {
+                padding: 56px 20px 0;
+
+                .user-img {
+                    position: static;
+                    width: 100%;
+
+                }
+            }
+        }
+    }   
+}
+
+// tablet
+@media (min-width: 768px) {}
+
+
+// laptop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// XL
+@media (min-width:1200px) {}

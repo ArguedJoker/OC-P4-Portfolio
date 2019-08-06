@@ -1,0 +1,192 @@
+.contact {
+
+    .logo {
+        background: url("../img/logo.jpg") no-repeat center center;
+        background-size: cover;
+        border: 5px solid $color2;
+        border-radius: 5%;
+        display: flex;
+        height: 200px;
+        opacity: 0.9;
+        width: 350px;
+    }
+
+    .info {
+        bottom: 0;
+        left: 0;
+        padding: 54px;
+        position: absolute;
+        top: 0;
+        width: 35%;
+
+        .info-box {
+            bottom: 60px;
+            position: absolute;
+
+            h4 {
+                font-size: 1.2rem;
+                color: #fefefe;
+                margin: 0.9rem 0;
+            }
+
+            p {
+                font-size: 1.1rem;
+                font-weight: 300;
+                color:#fefefe;
+                margin: 0.2rem 1.6rem;
+            }
+        }
+
+        .icon-section {
+            a {
+                color: $color4;
+                text-decoration: none;
+                font-size: 2rem;
+                padding: 0 10px;
+
+                &:hover {
+                    color: $hoverColor;
+                }
+                
+                &:first-child {
+                    padding: 0 10px 0 0;
+                }
+            }
+        }
+    }
+
+    .content-area {
+        background: white;
+        margin-left: 35%; 
+        // padding: 0 0 0 25%;
+        width: 65%;
+        height: 100%;
+
+        .form-container {
+            display: inline-block;
+            height: 100%;
+            position: relative;
+            width: 30%;
+            
+
+
+            .form {
+                background: $color2;
+                color: $color3;
+                box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.5);
+                border-radius: 2.5%;
+                height: 700px;
+                left: -125px;
+                margin-top: 50px;
+                position: absolute;
+                top: 56px;
+                width: 400px;
+                -moz-background-size: cover;
+                -moz-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.5);
+                -o-background-size: cover;
+                -webkit-background-size: cover;
+                -webkit-boxshadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.5);
+                padding: 46px;
+                
+                //&:hover {
+                //   overflow-y: scroll;
+                //    overflow-x: hidden;
+                //}
+            }
+
+            h4 {
+                font-size: 1.6rem;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+
+            }
+
+            input[type="text"], 
+            input[type="email"], 
+            input[type="budget"],
+            input[type="message"],
+            textarea {
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid $color4;
+                width: 100%;
+                margin-bottom: 1rem;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                line-height: 1.2rem;
+                color: $color5;
+                padding: 10px 0;
+            }
+
+            button[type="submit"] {
+                background: $color1;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                border-radius: 30px;
+                text-align: center;
+                padding: 17px 30px;
+                border: none;
+                font-size: 1rem;
+                color: white;
+                text-transform: uppercase;
+                width: 100%;
+
+            }
+            
+        }
+
+        
+        .contact-section {
+            display: inline-block;
+            padding: 25% 0 0 0;
+            vertical-align: top;
+            
+            .contact-info { 
+
+                float: right;
+                padding: 0 56px;
+
+                h1{
+                    font-size: 2.3rem;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    margin: 0 0 1.5rem;
+                }
+
+            .contact-box {
+                    max-width: 600px;
+                    margin-left: 30px;
+                    padding: 30px;
+                    transition: all 0.5, ease-in-out;
+                    cursor: pointer;
+                    transition: all 0.5s ease-in-out;
+
+                    &:hover {
+                        box-shadow: 0px 0px 74px 6px rgba(0, 0, 0, 0.2);
+                        background-color: rgba(128, 0, 0, 0.3);
+                        -moz-box-shadow: 0px 0px 74px 6px rgba(0, 0, 0, 0.2);
+                        -webkit-boxshadow: 0px 0px 74px 6px rgba(0, 0, 0, 0.2);
+                        border-radius: 5%; 
+                    }
+
+                    h5 {
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        margin: 0 0 1.5rem;
+                    }
+
+                    p {
+                        color: $color2;
+                        font-weight: 300;
+                        line-height: 1.4;
+                        margin: 0 0 2rem;
+
+                        span {
+                            color: $color1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

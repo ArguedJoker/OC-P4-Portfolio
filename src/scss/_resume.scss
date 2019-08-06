@@ -1,0 +1,125 @@
+.resume {
+    .logo {
+        align-items: center;
+        border: 5px solid $color3;
+        color: $color3;
+        display: flex;
+        font-size:2rem;
+        height: 100px;
+        line-height: 0;
+        padding: 32.5px;
+        text-transform: uppercase; 
+        width: 200px;
+    }
+
+    .info {
+        bottom: 0;
+        left: 0;
+        padding: 54px;
+        position: absolute;
+        top: 0;
+        width: 20%;
+    }
+    .info-box {
+        width: 80%;
+        bottom: 60px;
+        position: absolute;
+
+        h4 {
+            font-size: 1rem;
+            color: #fefefe;
+            margin: 0.9rem 0;
+        }
+
+        p {
+            font-size: 0.8rem;
+            font-weight: 300;
+            color: #fefefe;
+            margin: 0.2rem 1.6rem;
+        }
+    }
+
+    .icon-section {
+        a {
+            color: $color4;
+            text-decoration: none;
+            font-size: 2rem;
+            padding: 0 10px;
+
+            &:hover {
+                color: $hoverColor;
+            }
+
+            &:first-child {
+                padding: 0 10px 0 0;
+            }
+        }
+    }
+
+    .content-area {
+        background: white;
+        margin-bottom: 56px;
+        margin-left: 20%; 
+        // padding: 0 0 0 25%;
+        width: 80%;
+        height: 100%;
+    }
+
+    .category {
+
+        margin-bottom: 56px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 56px;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+
+        .exp-section {
+            display: grid;
+            grid-column-gap: 56px;
+            grid-row-gap: 30px;
+            grid-template-columns: 1fr 1fr;
+            max-width: 90%;
+
+
+            .exp {
+                padding: 30px;
+                transition: all 0.5s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 0px 0px 74px 6px rgba(0, 0, 0, 0.2);
+                    background-color: rgba(128, 0, 0, 0.3);
+                    -moz-box-shadow: 0px 0px 74px 6px rgba(0, 0, 0, 0.2);
+                    -webkit-boxshadow: 0px 0px 74px 6px rgba(0, 0, 0, 0.2);
+                    border-radius: 50%;  
+                }
+
+
+
+                h5 {
+                    font-weight: 500;
+                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                    margin-bottom: 1.4rem;
+                }
+
+                p {
+                    font-weight: 300;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    margin-bottom: 0.5rem;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
