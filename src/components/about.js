@@ -1,4 +1,7 @@
-import React, { component } from 'react';
+import React from 'react';
+
+
+
 
     class About extends React.Component {
         render() {
@@ -13,11 +16,10 @@ import React, { component } from 'react';
 
                     <section id="menu">
                         <nav>
-                            <a href="/">Home</a>
-                            <a href="/">About</a>
-                            <a href="./portfolio.html">Portfolio</a>
-                            <a href="/">Blog</a>
-                            <a href="./contact.html">Contact</a>
+                            <a href="./about.js">About</a>
+                            <a href="./resume.js">Resume</a>
+                            <a href="./portfolio.js">Portfolio</a>
+                            <a href="./contact.js">Contact</a>
                         </nav>
                     </section>
 
@@ -33,7 +35,7 @@ import React, { component } from 'react';
                             <h4>Find me on:</h4>
                             <div className="icon-section">
                                 <a><i className="fab fa-github-square"></i></a>
-                                <a><i className="fab fa-linkedin"></i></a>
+                                <a><i className="fab fa-aedin"></i></a>
                                 <a><i className="fab fa-facebook-square"></i></a>
                                 <a><i className="fab fa-instagram"></i></a>
                             </div>
@@ -43,23 +45,24 @@ import React, { component } from 'react';
 
                     <section className="content-area">
                         <div className="img-container">
-                            <div className="user-img"></div>
+                            <div className="user-img" alt-text="portfolio-image"></div>
                         </div>
                         <div className="profile-section">
                             <div className="profile">
-                                <h1> Rohan <span>Pratap <br/> Singh </span> Chauhan</h1>
+                                <h1> About Me! </h1>
                                 <h5> Web Developer</h5>
-                                <p> Hi and welcome to my landing page! Need a new website? Maybe a web-application? Whatever the issue let me bring your dreams into reality. <span>Together.</span> </p>
-                                <a href="./portfolio.html" className="primary-btn">Portfolio</a>
-                                <a href="./resume.html" className="secondary-btn">Resume</a>
-                                <a href="./contact.html" className="tertiary-btn">Contact</a>
+                                <p> Hi and welcome to my landing page! Need a new website? Maybe a web-application? Whatever the issue let me bring your dreams into reality. <span>Together.</span></p>
+                                <p> Want to know more? Click on one of the buttons below. </p>
+                                <a href="./portfolio.js" className="primary-btn">Portfolio</a>
+                                <a href="./resume.js" className="secondary-btn">Resume</a>
+                                <a href="./contact.js" className="tertiary-btn">Contact</a>
                             </div>
                         </div>
                     </section>
                 </body>
             </div>
 
-            )
+            );
         }
     }
 

@@ -1,5 +1,8 @@
 .home {
 
+    height: 875px;
+    width: auto;
+
     .logo {
         background: url("../img/logo.jpg") no-repeat center center;
         background-size: cover;
@@ -75,7 +78,7 @@
                 box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.5);
                 border-radius: 2.5%;
                 height: 700px;
-                left: -125px;
+                left: -185px;
                 margin-top: 50px;
                 position: absolute;
                 top: 56px;
@@ -94,14 +97,14 @@
         
         .profile-section {
             display: inline-block;
-            max-width: 500px;
+            max-width: 600px;
             padding: 25% 0 0 0;
             vertical-align: top;
             
             .profile { 
 
                 h1{
-                    font-size: 2.3rem;
+                    font-size: 3rem;
                     font-weight: 700;
                     line-height: 1.2;
                     margin: 0 0 1.5rem;
@@ -112,13 +115,14 @@
                 }
 
                 h5 {
-                    font-size: 1.3rem;
+                    font-size: 2.3rem;
                     margin: 0 0 1.5rem;
                 }
 
                 p {
                     color: $color2;
                     font-weight: 300;
+                    font-size: 1.3rem;
                     line-height: 1.4;
                     margin: 0 0 2rem;
 
