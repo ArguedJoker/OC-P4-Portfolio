@@ -5,6 +5,7 @@ import InfoBox from './infoBox.js';
 
 
 
+
     class Resume extends React.Component {
         render() {
             return(

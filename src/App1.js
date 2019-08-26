@@ -36,7 +36,7 @@ class Demo extends React.Component {
                     <Drawer title="Title" />
                     <Content>
                         <div className="page-content">
-                            <Route path="/" component={About} /> {this.state.activeTab}
+                            <Route path="/" component={About}> {this.state.activeTab} </Route>
                             <Route path="/resume" component={Resume} />
                             <Route path="/portfolio" component={Portfolio} />
                             <Route path="/contact" component={Contact} />
