@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import InfoBox from './infoBox.js';
 
 
 
@@ -16,10 +17,10 @@ import React from 'react';
 
                     <section id="menu">
                         <nav>
-                            <a href="./about.js">About</a>
-                            <a href="./resume.js">Resume</a>
-                            <a href="./portfolio.js">Portfolio</a>
-                            <a href="./contact.js">Contact</a>
+                            <Link to="./about.js">About</Link>
+                            <Link to="./resume.js">Resume</Link>
+                            <Link to="./portfolio.js">Portfolio</Link>
+                            <Link to="./contact.js">Contact</Link>
                         </nav>
                     </section>
 
@@ -27,20 +28,7 @@ import React from 'react';
                         <div className="logo">
                             <img />
                         </div>
-                        <div className="info-box">
-                            <h4>Email:</h4>
-                            <p>rohanpschauhan23@gmail.com</p>
-                            <h4>Phone:</h4>
-                            <p>07xxxxxxxxx</p>
-                            <h4>Find me on:</h4>
-                            <div className="icon-section">
-                                <a><i className="fab fa-github-square"></i></a>
-                                <a><i className="fab fa-aedin"></i></a>
-                                <a><i className="fab fa-facebook-square"></i></a>
-                                <a><i className="fab fa-instagram"></i></a>
-                            </div>
-                            
-                        </div>
+                        <InfoBox/>
                     </section>
 
                     <section className="content-area">
@@ -53,15 +41,14 @@ import React from 'react';
                                 <h5> Web Developer</h5>
                                 <p> Hi and welcome to my landing page! Need a new website? Maybe a web-application? Whatever the issue let me bring your dreams into reality. <span>Together.</span></p>
                                 <p> Want to know more? Click on one of the buttons below. </p>
-                                <a href="./portfolio.js" className="primary-btn">Portfolio</a>
-                                <a href="./resume.js" className="secondary-btn">Resume</a>
-                                <a href="./contact.js" className="tertiary-btn">Contact</a>
+                                <Link to="./portfolio" className="primary-btn">Portfolio</Link>
+                                <Link to="./resume" className="secondary-btn">Resume</Link>
+                                <Link to="./contact" className="tertiary-btn">Contact</Link>
                             </div>
                         </div>
                     </section>
                 </body>
             </div>
-
             );
         }
     }

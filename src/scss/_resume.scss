@@ -1,15 +1,14 @@
 .resume {
+    
     .logo {
-        align-items: center;
-        border: 5px solid $color3;
-        color: $color3;
+        background: url("../img/logo.jpg") no-repeat center center;
+        background-size: cover;
+        border: 5px solid $color2;
+        border-radius: 5%;
         display: flex;
-        font-size:2rem;
-        height: 100px;
-        line-height: 0;
-        padding: 32.5px;
-        text-transform: uppercase; 
-        width: 200px;
+        height: 200px;
+        opacity: 0.9;
+        width: 350px;
     }
 
     .info {

@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import InfoBox from './infoBox.js';
 
 
 
 class Portfolio extends React.Component {
     render() {
         return(
+
 
         <div>    
            
@@ -15,28 +18,16 @@ class Portfolio extends React.Component {
 
                 <section id="menu">
                     <nav>
-                        <a href="./about.js">About</a>
-                        <a href="./resume.js">Resume</a>
-                        <a href="./portfolio.js">Portfolio</a>
-                        <a href="./contact.js">Contact</a>
+                        <Link to="./about.js">About</Link>
+                        <Link to="./resume.js">Resume</Link>
+                        <Link to="./portfolio.js">Portfolio</Link>
+                        <Link to="./contact.js">Contact</Link>
                     </nav>
                 </section>
 
                 <section className="info">
-                    <div className="logo">Rohan</div>
-                    <div className="info-box">
-                        <h4>Email:</h4>
-                        <p>rohanpschauhan23@gmail.com</p>
-                        <h4>Phone:</h4>
-                        <p>07xxxxxxxxx</p>
-                        <h4>Find me on:</h4>
-                        <div className="icon-section">
-                            <a href="https://github.com"><i className="fab fa-github-square"></i></a>
-                            <a href="https://aedin.com"><i className="fab fa-aedin"></i></a>
-                            <a href="https://facebook.com"><i className="fab fa-facebook-square"></i></a>
-                            <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
-                        </div>                            
-                    </div>
+                    <div className="logo"></div>
+                    <InfoBox />
                 </section>
 
                 <section className="content-area">

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import InfoBox from './infoBox.js';
 
 
 
@@ -15,30 +17,16 @@ import React from 'react';
 
                     <section id="menu">
                         <nav>
-                            <a href="/">About</a>
-                            <a href="/">Portfolio</a>
-                            <a href="/">Blog</a>
-                            <a href="/">Contact</a>
+                            <Link to="/">About</Link>
+                            <Link to="/">Portfolio</Link>
+                            <Link to="/">Blog</Link>
+                            <Link to="/">Contact</Link>
                         </nav>
                     </section>
 
                     <section className="info">
-                        <div className="logo">
-                            <img alt="RC Development | Logo"/>
-                        </div>
-                        <div className="info-box">
-                            <h4>Email:</h4>
-                            <p>rohanpschauhan23@gmail.com</p>
-                            <h4>Phone:</h4>
-                            <p>07xxxxxxxxx</p>
-                            <h4>Find me on:</h4>
-                            <div className="icon-section">
-                                <a><i className="fab fa-github-square"></i></a>
-                                <a><i className="fab fa-aedin"></i></a>
-                                <a><i className="fab fa-facebook-square"></i></a>
-                                <a><i className="fab fa-instagram"></i></a>
-                            </div>   
-                        </div>
+                        <div className="logo"></div>
+                            <InfoBox/>   
                     </section>
 
                     <section className="content-area">
@@ -74,7 +62,7 @@ import React from 'react';
                     </section>
                 </body>
 
-            </div>
+            </div>   
 
         );
     }
