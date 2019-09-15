@@ -1,0 +1,23 @@
+{
+    "1": {
+        "id": "1",
+        "title": "Revive Hair Studio",
+        "link": "therevivehairstudio.com",
+        "image": "./img/projects/hair.png"
+        
+    },
+    "2": {
+        "id": "2",
+        "title": "Chalet & Caviars",
+        "link": "http://dev-caviar-and-chalet.pantheonsite.io/",
+        "image":"./img/projects/realestate.png"
+    },
+    "3": {
+        "id": "3",
+        "title": "Brooklyn Film Festival",
+        "link": "https://2ae9361012c14671a3f5fbc0b7f694fd.codepen.website",
+        "image":"./img/projects/BOFF.png"
+    }
+
+
+}

@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Infosection from './../scss/_infoSection.scss';
-
 class InfoBox extends React.Component {
     render () {
         return (

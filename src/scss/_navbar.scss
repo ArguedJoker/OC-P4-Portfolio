@@ -1,0 +1,70 @@
+.Navbar {
+    position: fixed;
+    width: 100%;
+    background: white;
+    height: 56px;
+    top: 0;
+    left: 0;
+}
+
+.Navbar__navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.Navbar__logo {
+    margin-left: 1rem;
+}
+
+.Navbar__logo a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.Navbar__navigation-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.Navbar__navigation-items li {
+    padding: 0 0.5rem;
+}
+
+.Navbar__navigation-items {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.Navbar__navigation-items a:hover,
+.Navbar__navigation-items a:active {
+    color: red;
+}
+
+//Media Queries
+
+@media (max-width: 768px) {
+    .Navbar__navigation-items {
+        display: none;
+    }
+}
+
+@media (max-width: 769px) {
+    .Navbar__toggle-button {
+        display: none;
+    }
+
+    .Navbar__logo {
+        margin-left: 0;
+    }
+}

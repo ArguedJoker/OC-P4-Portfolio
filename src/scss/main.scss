@@ -1,12 +1,10 @@
-@import "reset.scss";
-@import "variables.scss";
-@import "general.scss";
-@import "_infoSection.scss";
-@import "_home.scss";
-@import "_resume.scss";
-@import "_portfolio.scss";
-@import "_contact.scss";
-
-
-
+@import './reset.scss';
+@import './variables.scss';
+@import './general.scss';
+@import './_navbar.scss';
+@import './_home.scss';
+@import './about';
+@import './portfolio';
+@import './hire';
+@import './infosection.scss';
 

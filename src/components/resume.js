@@ -1,6 +1,6 @@
 import React, { component } from 'react';
 import { Link } from 'react-router-dom';
-import InfoBox from './infoBox.js';
+
 
 
 
@@ -28,7 +28,7 @@ import InfoBox from './infoBox.js';
 
                     <section className="info">
                         <div className="logo"></div>
-                        <InfoBox />
+                        
                     </section>
 
                     <section className="content-area">

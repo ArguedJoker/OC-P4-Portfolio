@@ -1,0 +1,51 @@
+.about {
+
+    .content-area {
+
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px;
+
+        .img-container {
+
+            .user-img {
+                margin-top: 100px;
+                margin-right: 20px;
+                height: 500px;
+                width: 300px;
+            }
+        }
+        
+        .profile-section{
+            .profile {
+            
+                h1 {
+                    color: white;
+                    font-size: 36px;
+                    margin: 100px;
+
+                }
+
+                h5 {
+                    color: white;
+                    font-size: 36px;
+                    margin: 25px;
+                }
+
+                p {
+                    color: white;
+                    font-size: 28px;
+                    margin: 25px;
+                }
+
+            
+            }
+        }
+        
+        
+    }
+
+    
+}
