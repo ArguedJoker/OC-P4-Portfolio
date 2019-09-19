@@ -1,0 +1,91 @@
+.form-container {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    width: 30%;
+
+    .form {
+        background: $color2;
+        color: $color3;
+        box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.5);
+        border-radius: 2.5%;
+        height: 700px;
+        left: 800px;
+        margin-top: 50px;
+        position: absolute;
+        top: 56px;
+        width: 400px;
+        -moz-background-size: cover;
+        -moz-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.5);
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        -webkit-boxshadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.5);
+        padding: 46px;
+
+        .form-template {
+            display: flex;
+            flex-direction: column;
+            margin-top: -30px;
+            margin-bottom: -30px;
+
+            h4 {
+                font-size: 30px;
+                text-transform: uppercase;
+                padding: 10px;
+            }
+            
+            .Name {
+                border-radius: 5%;
+                margin: 10px;
+            }
+
+            .Email {
+                border-radius: 5%;
+                margin: 10px;
+            }
+
+            .Budget {
+                border-radius: 5%;
+                margin: 10px;
+            }
+
+            .Message {
+                border-radius: 5%;
+                margin: 10px;
+            }
+
+            .tertiary-btn{
+                margin: 30px;
+                padding: 10px;
+            }
+
+        }
+    }
+
+    .contact-section {
+        display: flex;
+        margin-top: 10px;
+        padding: 20px;
+
+
+        .contact-info {
+
+            margin-top: 200px;
+            margin-left: 100px;
+            padding: 0;
+
+            h1 {
+                color: white;
+                text-transform: uppercase;
+                font-size: 42px;
+                padding: none;
+            }
+
+            .contact-box {
+                color: white;
+                font-size: 36px;
+                margin-top: 50px;
+            }
+        }
+    }
+}
