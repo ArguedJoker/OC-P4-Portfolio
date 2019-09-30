@@ -1,0 +1,104 @@
+.about {
+
+    .content-area {
+
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px;
+
+        .img-container {
+
+            .user-img {
+                margin-top: 100px;
+                margin-left: 50px;
+                padding: 10px;
+                height: 500px;
+                width: 350px;
+                border-radius: 10%;
+            }
+        }
+        
+        .profile-section{
+            .profile {
+                width: 800px;
+            
+                h1 {
+                    color: white;
+                    font-size: 36px;
+                    margin: 100px;
+
+                }
+
+                h5 {
+                    color: white;
+                    font-size: 36px;
+                    margin: 25px;
+                }
+
+                p {
+                    color: white;
+                    font-size: 28px;
+                    margin: 25px;
+                }
+            
+            }
+
+            .wp {
+                    font-size: 28px;
+                    margin: 25px;
+                    width: 775px;
+
+                    p {
+                        color: white;
+                        padding: 10px;
+                    }
+
+                    a {
+                        font-size: 20px;
+                        margin-top: 20px;
+                    }
+                }
+            
+        }
+        
+        
+    }
+
+    //MEDIA QUERIES
+
+        @media (max-width: 768px) {
+            .content-area{
+                display: flex;
+                flex-direction: column;
+            }
+            .profile-section{
+            .profile {
+            
+                h1 {
+                    color: white;
+                    font-size: 20px;
+                    margin: 100px;
+
+                }
+
+                h5 {
+                    color: white;
+                    font-size: 20px;
+                    margin: 25px;
+                }
+
+                p {
+                    color: white;
+                    font-size: 18px;
+                    margin: 25px;
+                }
+
+            
+            }
+        
+        }
+    }
+    
+}

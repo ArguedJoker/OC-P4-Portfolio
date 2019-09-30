@@ -1,0 +1,61 @@
+//General Styling
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background: $color1;
+    font-size: 18px;
+    font-family: 'Farro', sans-serif;
+    height: 100%;
+}
+
+// button styling 
+
+.primary-btn, .tertiary-btn {
+    background: $color1;
+    border-radius: 20px;
+    color: $color3;
+    display: inline-block;
+    letter-spacing: 3px;
+    margin-right: 5px;
+    -moz-border-radius: 20px;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: btnTansitions;
+    -webkit-border-radius: 20px; 
+
+    &:hover {
+        background: $hoverColor;
+    }
+}
+
+.secondary-btn {
+    border: 4px solid $color2;
+    border-radius: 20px;
+    color: $color2;
+    display: inline-block;
+    letter-spacing: 3px;
+    -moz-border-radius: 20px;
+    padding: 12px 27px;
+    margin-right: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: btnTransitions;
+    -webkit-border-radius: 20px; 
+
+    &:hover {
+        border-color: $hoverColor;
+    }
+}
+
+.scroll-section {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 56px;
+}

@@ -1,0 +1,75 @@
+.home {
+
+    display: block;
+    text-align: center;
+
+    .home-layout {
+        margin-top: 160px;
+        padding: 50px;
+    }
+
+    .foot {
+        background: black;
+        color: white;
+    }
+
+    h1 {
+        color: white;
+        font-size: 36px;
+        margin: 5px;
+
+    }
+
+    h3, p {
+       color: white;
+       font-size: 36px;
+       margin: 5px;
+    }
+
+    q {
+        color: white;
+        font-size: 48px;
+        font-style: italic;
+        margin: 5px;
+    }
+
+    .entry-btn {
+        background: $color1;
+        border-radius: 20px;
+        color: $color3;
+        display: inline-block;
+        letter-spacing: 3px;
+        margin-top: 10px;
+        margin-right: 5px;
+        -moz-border-radius: 20px;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: btnTansitions;
+        -webkit-border-radius: 20px;
+
+        &:hover {
+            background: $hoverColor;
+        }
+    }
+    
+}
+  
+
+
+// MEDIA QUERIES
+
+// phone
+@media (min-width: 767px) and (max-width: 991px) {  
+}
+
+// tablet
+@media (min-width: 768px) {}
+
+
+// laptop
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// XL
+@media (min-width:1200px) {}
