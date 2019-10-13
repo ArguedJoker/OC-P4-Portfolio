@@ -1,0 +1,11 @@
+@media all and (max-width: 1098px) {
+    .hide-md-sm-devices {
+        display: none;
+    }
+}
+
+@media all and (min-width: 1098px) {
+    .hide-larger-screens {
+        display: none
+    }
+}

@@ -1,55 +1,61 @@
-import React, {Component, Fragment} from 'react';
-import {BrowserRouter as Router, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
-import Work from './components/Work';
-import Portfolio1 from './components/Portfolio1';
-import Hire from './components/Hire';
-import SideDrawer from './components/SideDrawer/SideDrawer';
-import Backdrop from './components/backdrop/Backdrop';
+import React, { Component } from 'react';
+import './styles/css/Reset.css';
+import './styles/css/general.css';
+import { NavLink, BrowserRouter, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Work from './pages/Work';
+import Contact from './pages/Contact';
 
-/* SCSS */
-import Main from './scss/main.scss';
+class App extends Component {
+  constructor(props) {
+    super(props)
+  }
 
-        export default class App extends Component {
-            state = {
-                sideDrawerOpen: false
-            };
-            
-            drawerToggleClickHandler = () => {
-                this.setState((prevState) => {
-                    return {sideDrawerOpen: !prevState.sideDrawerOpen};
-                });
-            };
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <Header>
+            <Navbar>
+              
+              <li>
+                <NavLink exact activeClassName="selected" to="./Home">Home</NavLink>
+              </li>
+              <li>
+                <NavLink exact activeClassName="selected" to="./About">About</NavLink>
+              </li>
+              <li>
+                <NavLink exact activeClassName="selected" to="./Work">Work</NavLink>
+              </li>
+              <li>
+                <NavLink exact activeClassName="selected" to="./Contact">Hire</NavLink>
+              </li>
+              <hr/>
+            </Navbar>
+          </Header>
 
-            backdropClickHandler = () => {
-                this.setState({sideDrawerOpen: false});
-            };
+          <Route path="/home" component={ Home } />
+          <Route path="/about" component={ About } />
+          <Route path="/work" component={ Work } />
+          <Route path="/contact" component={ Contact } />
 
-            render() {
-                let backdrop;
+          <Footer>
+            <div className="left">
+              <p>Copyright &copy; { new Date().getFullYear()}-{new Date().getFullYear() + 1}</p>
+            </div>
+            <div className="right">
+              <a href="https://github.com/ArguedJoker">Github</a>
+              <a href="www.linkedin.com/in/rohan-chauhan-9bba73102">LinkedIn</a>
+            </div>
+          </Footer>
+        </div>
+      </BrowserRouter>
+    );
+  }
+}
 
-                if (this.state.sideDrawerOpen) {
-                    backdrop = <Backdrop  click={this.backdropCLickHandler}/>
-                }
-                return (
-                    <Router>
-                        <Fragment>
-                            <div style={{height: '100%'}}>
-                            <Navbar drawerClickHandler click={this.drawerClickHandler} />
-                            <SideDrawer show={this.state.sideDrawerOpen}/>
-                            {Backdrop}
-                            <main style={{height: '100%'}}/>
-                            <Route exact path='/' component={ Home }>Home</Route>
-                            <Route path='/about' component={ About }>About</Route>
-                            <Route path='/work' component={ Work }>Work Experience</Route>
-                            <Route path='/hire-me' component={ Hire }>Hire Me</Route>
-                            <Route path='/portfolio1' component={ Portfolio1 }
-                            >Portfolio</Route>
-                            </div>
-                        </Fragment>
-                    </Router>
-                )
-            }
-        }
+export default App;
