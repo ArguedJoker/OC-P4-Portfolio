@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto"); /* Import of Roboto font*/
+
+/* Resetting all CSS elements to border-box */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #273c75;
+}
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+}
