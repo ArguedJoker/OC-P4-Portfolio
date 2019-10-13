@@ -30,6 +30,11 @@ p {
     font-weight: normal;
 }
 
+
+.App {
+    margin: 0;
+    padding: 0;
+}
 /* Navigation bar */
 
 .navbar ul li {
@@ -193,17 +198,87 @@ p {
  */
 
  .home-page {
+    display: block;
     position: relative;
-    background-color: #fff;
-    left: 0;
-    top: 0;
+    background-color: #87CEFA;
+    padding: 100px 20px;
+    margin: 0px;
     width: 100%;
-    font-size: 36px;
-    
+    font-size: 3.3vw;
+    text-align: center;
+    width: 100%;
+    height: auto;
+ }
 
+ .home-page p {
+    margin: 30px;
+    font-size: 3.27vw;
+    text-align: center;
+    
  }
 
 /* Buttons */
+ 
+.primary-btn {
+    background: #4b21ff;
+    border-radius: 20px;
+    color: #fefefe;
+    display: inline-block;
+    letter-spacing: 3px;
+    margin-right: 5px;
+    -moz-border-radius: 20px;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 20px;
+}
+
+.tertiary-btn {
+    background: #4b21ff;
+    border-radius: 20px;
+    color: #fefefe;
+    display: inline-block;
+    letter-spacing: 3px;
+    margin-right: 5px;
+    -moz-border-radius: 20px;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 20px; 
+}
+
+.primary-btn:hover {
+    background: #800000;
+}
+
+.tertiary-btn:hover {
+    background: #800000;
+}
+
+.secondary-btn {
+    border: 4px solid #272727;
+    border-radius: 20px;
+    color: #272727;
+    display: inline-block;
+    letter-spacing: 3px;
+    -moz-border-radius: 20px;
+    padding: 12px 27px;
+    margin-right: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 20px; 
+}
+
+
+.secondary-btn:hover {
+    background: #800000;
+}
 
 /**
  * Section About
@@ -211,7 +286,7 @@ p {
 
 .about-page {
     position: relative;
-    background-color:#FFF;
+    background-color:#87CEFA;
 }
 
 .about-page::before {
@@ -653,7 +728,7 @@ p {
 
 .about--content {
     width: 60%;
-    margin: 35px auto;
+    margin: 0px auto;
     padding: 10px;
     color: #1f1f1f;
     text-align: justify;
@@ -759,6 +834,14 @@ p {
         background-repeat: no-repeat;
     }
 
+    #box3 {
+        background-image: url('../../media/img/Projects/BOFF.png');
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     #box1 {
         background-image: url('../../media/img/Projects/BOFF.png');
         -webkit-background-size: cover;
@@ -828,6 +911,18 @@ p {
         transform: scale(1.2);
     }
 
+    #box3:before {
+        background-image: url('../../media/img/Projects/BOFF.png');
+    }
+
+    #box3:hover::before {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
     #box4:before {
         background-image: url('../../media/img/Projects/BOFF.png');
     }
@@ -864,7 +959,9 @@ p {
 /* Footer content */
 
 .footer {
-    background: #fff;
+    display: inline-block;
+    background: #222324;
+    color: #fff;
     width: 100%;
     min-height: 50px;
     padding: 15px 5px;
@@ -877,16 +974,23 @@ p {
     margin-left: 20px;
 }
 
+.footer .left {
+    font-size: 0.5vw;
+}
+
 /* To display and change look and feel to the right of Github, e.t.c. */
 
 .footer .right {
+    display: flex;
+    flex-direction: column;
     float: right;
     margin-right: 20px;
 }
 
 .footer .right a {
-    padding: 0 10px;
-
+    margin: 2px;
+    color: #fff;
+    font-size: 4vw;
 }
 
 /* Hero */
