@@ -26,7 +26,7 @@ export default class Work extends Component {
                         </div>
 
                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <a href="therevivehairstudio.com">
+                            <a href="https://therevivehairstudio.com">
                                 <ProjectBox boxId="2">
                                     <h2>Revive Hair Studio</h2>
                                 </ProjectBox>
@@ -62,7 +62,7 @@ export default class Work extends Component {
 
                     <div className="row hide-md-sm-devices">
                         <div className="col-xs-12 col-md-12 col-lg-6 col-sm-12">
-                            <a href="/">
+                            <a href="https://2ae9361012c14671a3f5fbc0b7f694fd.codepen.website">
                                 <ProjectBox boxId="1" Styles={{minHeight: '98%', height:'250px'}}>
                                     <h2>Brooklyn Film Festival</h2>
                                 </ProjectBox>
@@ -70,7 +70,7 @@ export default class Work extends Component {
                         </div>
 
                         <div className="col-xs-12 col-md-12 col-lg-6 col-sm-12">
-                            <a href="/">
+                            <a href="https://therevivehairstudio.com">
                                 <ProjectBox boxId="2">
                                     <h2>Revive Hair Studio</h2>
                                 </ProjectBox>
@@ -78,7 +78,7 @@ export default class Work extends Component {
                         </div>
 
                         <div className="col-xs-12 col-md-12 col-lg-6 col-sm-12">
-                            <a href="/">
+                            <a href="http://dev-caviar-and-chalet.pantheonsite.io/">
                                 <ProjectBox boxId="3">
                                     <h2>Chalet & Caviars</h2>
                                 </ProjectBox>
@@ -94,7 +94,7 @@ export default class Work extends Component {
                         </div>
 
                         <div className="col-xs-12 col-md-12 col-lg-6 col-sm-12">
-                            <a href="/">
+                            <a href="https://40b4ec76fc224b0dab4d518ce6436dbc.codepen.website">
                                 <ProjectBox boxId="5">
                                     <h2>Tribute Page</h2>
                                 </ProjectBox>

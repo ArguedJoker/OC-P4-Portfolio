@@ -31,7 +31,7 @@ export default class About extends Component {
                                         <List title="E-mail" cont="rpscdevelopments@gmail.com" />
                                         <List title="Education" cont="BSc Full-Stack Web Development  2018+" />
                                         <List title="Job" cont="Freelance" />
-                                        <List title="Educational Institution" cont="OpenClassrooms" />
+                                        <List title="Educational Institution" cont="OpenClassrooms, AMSPAR, University of Hull" />
                                         <br/>
                                         <List title="Hobbies" cont="Technology, Guitar, Gyming, Reading" />
                                     </ul>

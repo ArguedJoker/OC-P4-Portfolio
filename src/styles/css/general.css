@@ -770,6 +770,14 @@ p {
     background: #fff;
 }
 
+.contact-page .call2action p {
+    font-size: 15px;
+    text-align: justify;
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+}
+
 /* Project boxes */
 
 .box {
