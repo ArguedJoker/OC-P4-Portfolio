@@ -288,6 +288,14 @@ p {
     background-color:#87CEFA;
 }
 
+.about-page h3 {
+    padding: 20px;
+}
+
+.about-page p {
+    padding: 20px;
+}
+
 .about-page::before {
     position: absolute;
     left: 0;
@@ -965,6 +973,10 @@ p {
 /* Footer content */
 
 .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: inline-block;
     background: #222324;
     color: #fff;
