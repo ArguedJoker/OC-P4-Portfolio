@@ -53,6 +53,7 @@ class App extends Component {
             </div>
             <div className="right">
               <a href="https://github.com/ArguedJoker">Github</a>
+              <hr/>
               <a href="https://www.linkedin.com/in/rohan-chauhan-9bba73102">LinkedIn</a>
             </div>
           </Footer>

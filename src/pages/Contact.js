@@ -11,9 +11,9 @@ export default class Contact extends Component {
                     <form autocmoplete="off" action="https://formspree.io/rpscdevelopments@gmail.com" method="post">
                         <Box>
                             <div className="call2action">
-                                <p>
+                                <h1>
                                     Even if you're not ready to go all in, lets at the least have a chat. If you don't need me now, you may do later. Lets connect and then you can make the right choice for you and your idea.Talk soon!
-                                </p>
+                                </h1>
                             </div>
                             <Input title="Name" name="name" required />
                             <Input title="Budget" name="_budget" />

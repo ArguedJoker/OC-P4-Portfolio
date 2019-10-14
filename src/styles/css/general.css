@@ -755,6 +755,7 @@ p {
 .about--content p {
     font-size: 19px;
     font-weight: 400;
+    text-align: 
 }
 
 @media all and (max-width: 660px) {
@@ -778,8 +779,8 @@ p {
     background: #fff;
 }
 
-.contact-page .call2action p {
-    font-size: 15px;
+.contact-page .call2action h1 {
+    font-size: 3.27vw;
     text-align: justify;
     text-align: center;
     padding: 30px;
@@ -974,15 +975,12 @@ p {
 
 .footer {
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: inline-block;
-    background: #222324;
-    color: #fff;
     width: 100%;
     min-height: 50px;
     padding: 15px 5px;
+    background: #222324;
+    color: #fff;
+    min-height: 50px;
 }
 
 /* To display copyright info to the left */
@@ -990,17 +988,16 @@ p {
 .footer .left {
     float: left;
     margin-left: 20px;
+    
 }
 
-.footer .left {
-    font-size: 0.5vw;
+.footer .left p {
+    font-size: 2vw;
 }
 
 /* To display and change look and feel to the right of Github, e.t.c. */
 
 .footer .right {
-    display: flex;
-    flex-direction: column;
     float: right;
     margin-right: 20px;
 }
@@ -1008,7 +1005,7 @@ p {
 .footer .right a {
     margin: 2px;
     color: #fff;
-    font-size: 20px;
+    font-size: 3vw;
 }
 
 /* Hero */
