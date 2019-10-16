@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles/css/Reset.css';
 import './styles/css/general.css';
-import { NavLink, BrowserRouter, Redirect, Route } from 'react-router-dom';
+import { NavLink, BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
@@ -38,14 +38,14 @@ class App extends Component {
             </Navbar>
           </Header>
 
-          <Route exact path="/" render={() => (
-            <Redirect to={Home} />
-          )} />
+          <Switch>
+            <Redirect exact from="/" to= "/home" />
           
-          <Route path="/home" component={ Home } />
-          <Route path="/about" component={ About } />
-          <Route path="/work" component={ Work } />
-          <Route path="/contact" component={ Contact } />
+            <Route path="/home" component={ Home } />
+            <Route path="/about" component={ About } />
+            <Route path="/work" component={ Work } />
+            <Route path="/contact" component={ Contact } />
+          </Switch>
 
           <Footer>
             <div className="left">
